@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Interactive Rating Component</title>
+  <link rel="stylesheet" href="Rating.css">
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="image1"></div>
+
+    <section class="section">
+      <h1 class="heading">How did we do?</h1>
+      <p class="paragraph-state">
+        Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!
+      </p>
+
+      <form>
+        <div class="option-holder">
+          <button class="option" type="button" data-rating="1">1</button>  
+          <button class="option" type="button" data-rating="2">2</button>
+          <button class="option" type="button" data-rating="3">3</button>
+          <button class="option" type="button" data-rating="4">4</button>
+          <button class="option" type="button" data-rating="5">5</button>
+        </div>
+
+        <button class="submit" id="submit" type="button" disabled>Submit</button>
+      </form>
+    </section>
+  </main>
+
+
+  <div id="success" class="hidden">
+    <div class="popup">
+
+      <img src="images/illustration-thank-you.svg" alt="Illustration Thank You">
+
+      <p class="selected">You selected <span class="rating" id="rating"></span> out of 5</p>
+
+      <h1 class="heading">Thank you!</h1>
+
+      <p class="paragraph-state center">
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </div>
+
+  <script src="Rating.js"></script>
+
+</body>
+</html>
